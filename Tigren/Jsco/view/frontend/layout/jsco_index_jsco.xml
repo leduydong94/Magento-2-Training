@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Tigren\Jsco\Block\Index" name="jsco_test" template="Tigren_Jsco::jsco.phtml"/>
+            <block name="popular_products"
+                   template="Tigren_Jsco::popular-products.phtml" />
+            <block name="test-name"
+                   template="Tigren_Jsco::test-name.phtml" />
+        </referenceContainer>
+    </body>
+</page>

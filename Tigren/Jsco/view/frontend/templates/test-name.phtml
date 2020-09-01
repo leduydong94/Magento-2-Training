@@ -1,0 +1,24 @@
+<?php $jsonHelper = $this->helper('Magento\Framework\Json\Helper\Data'); ?>
+<div class="test-name" data-bind="scope:'test-name-scope'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+{
+".test-name": {
+"Magento_Ui/js/core/app": {
+"components": {
+"test-name-scope": {
+"component": "testName",
+"names": <?= /* @escapeNotVerified */
+    $jsonHelper->jsonEncode([
+        ['full_name' => 'Haru', 'class_name' => 'Tigren'],
+        ['full_name' => 'sku10', 'class_name' => 'Title10']
+    ]) ?>
+}
+}
+}
+}
+}
+
+
+</script>
